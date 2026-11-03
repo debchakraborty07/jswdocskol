@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  output: "export", // firebase hosting requires static export
+  images: {
+    unoptimized: true,
+  },
   turbopack: {
     rules: {
       "*.css": {

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#0F1F17"/>
+  <rect x="24" y="24" width="464" height="464" fill="none" stroke="#3E5A3F" stroke-width="12"/>
+  <rect x="64" y="64" width="384" height="384" fill="#1E3A2E"/>
+  <text x="50%" y="48%" font-family="monospace, sans-serif" font-size="96" font-weight="900" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" letter-spacing="10">JSW</text>
+  <text x="50%" y="68%" font-family="monospace, sans-serif" font-size="36" font-weight="700" fill="#C7CBB8" text-anchor="middle" dominant-baseline="central" letter-spacing="4">DOCS PORTAL</text>
+</svg>

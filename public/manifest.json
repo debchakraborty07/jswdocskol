@@ -1,0 +1,18 @@
+{
+    "name": "JSW Documentation Department Portal",
+    "short_name": "JSW Docs",
+    "description": "Operational Roster, Deployment & Notice System",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#C7CBB8",
+    "theme_color": "#0F1F17",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/icon.svg",
+            "sizes": "192x192 512x512",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ]
+}

@@ -1,26 +1,121 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ========================================================
+     ORIGINAL VINTAGE RETRO PALETTE (RESTORED)
+     ======================================================== */
+  --c-darkest: #0F1F17;
+  /* Very Dark Forest Green */
+  --c-forest: #1E3A2E;
+  /* Deep Green */
+  --c-mid-green: #3E5A3F;
+  /* Classic Muted Green */
+  --c-sage: #6B7F67;
+  /* Sage Soft Green */
+  --c-paper: #C7CBB8;
+  /* 90s Vintage Metallic Paper / Base */
+  --c-charcoal: #0F1F17;
+  /* Deep Contrast Text */
+
+  /* ব্যাকগ্রাউন্ড ও টেক্সট */
+  --app-bg: var(--c-paper);
+  --app-text: var(--c-charcoal);
+
+  /* প্যানেল ও বক্স */
+  --panel-bg: #D6DACB;
+  --panel-border: #3D4337;
+
+  /* সফটওয়্যার হেডার ও টাইটেলবার */
+  --header-bg: var(--c-darkest);
+  --header-text: #FFFFFF;
+
+  /* বাটন কালার */
+  --btn-bg: var(--c-forest);
+  --btn-text: #FFFFFF;
+  --btn-hover: var(--c-darkest);
+  --btn-danger: #8B2626;
+
+  /* এক্সেল রোস্টার টেবিল */
+  --table-header-bg: var(--c-forest);
+  --table-header-fg: #FFFFFF;
+  --table-border: #3D4337;
+  --table-row-even: #EBEFE4;
+  --table-row-odd: #F5F7F0;
+
+  /* শিফটের রঙ */
+  --shift-a-bg: #D4EDDA;
+  --shift-a-fg: #155724;
+  --shift-b-bg: #FFF3CD;
+  --shift-b-fg: #856404;
+  --shift-c-bg: #CCE5FF;
+  --shift-c-fg: #004085;
+  --shift-off-bg: #F8D7DA;
+  --shift-off-fg: #721C24;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Tailwind CSS v4 Theme Mapping */
+@theme {
+  --color-app-bg: var(--app-bg);
+  --color-app-text: var(--app-text);
+
+  --color-panel-bg: var(--panel-bg);
+  --color-panel-border: var(--panel-border);
+
+  --color-header-bg: var(--header-bg);
+  --color-header-text: var(--header-text);
+
+  --color-btn-bg: var(--btn-bg);
+  --color-btn-text: var(--btn-text);
+  --color-btn-hover: var(--btn-hover);
+  --color-btn-danger: var(--btn-danger);
+
+  --color-table-header-bg: var(--table-header-bg);
+  --color-table-header-fg: var(--table-header-fg);
+  --color-table-border: var(--table-border);
+  --color-table-row-even: var(--table-row-even);
+  --color-table-row-odd: var(--table-row-odd);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ========================================================
+   3. ZERO ANIMATION & 1990s RETRO SOFTWARE STYLING
+   ======================================================== */
+*,
+*::before,
+*::after {
+  /* Transition and animation restricted (Instantly snappy feel) */
+  transition-duration: 0ms !important;
+  animation-duration: 0ms !important;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--app-bg);
+  color: var(--app-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 90s style */
+.retro-button {
+  border-top: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  cursor: pointer;
+}
+
+.retro-button:active {
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+/* Roster table */
+.retro-cell {
+  border: 1px solid var(--table-border);
+  padding: 4px 6px;
+  text-align: center;
+  font-size: 12px;
 }
